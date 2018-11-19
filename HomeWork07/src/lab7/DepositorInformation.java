@@ -44,10 +44,10 @@ public class DepositorInformation {
 	}
 
 	private void setFio(String fio) {
-		if (fio.matches("^[A-Za-zÀ-ßà-ÿ].{0,64}$")) {
+		if (fio.matches("^[A-Za-zĞ-Ğ¯Ğ°-Ñ].{0,64}$")) {
 			this.fio = fio;
 		} else {
-			System.out.println("Âû ââåëè èìÿ êîòîğîå ïğåâûøàåò ëèìèò ñèìâîëîâ.");
+			System.out.println("Ğ’Ñ‹ Ğ²Ğ²ĞµĞ»Ğ¸ Ğ¸Ğ¼Ñ ĞºĞ¾Ñ‚Ğ¾Ñ€Ğ¾Ğµ Ğ¿Ñ€ĞµĞ²Ñ‹ÑˆĞ°ĞµÑ‚ Ğ»Ğ¸Ğ¼Ğ¸Ñ‚ ÑĞ¸Ğ¼Ğ²Ğ¾Ğ»Ğ¾Ğ².");
 		}
 	}
 
@@ -59,13 +59,13 @@ public class DepositorInformation {
 		if (numberContract > 99999 && numberContract <= 999999) {
 			this.numberContract = numberContract;
 		} else {
-			System.out.println("Âû ââåëè íåïğàâèëüíûé íîìåğ êîíòğàêòà.");
+			System.out.println("Ğ’Ñ‹ Ğ²Ğ²ĞµĞ»Ğ¸ Ğ½ĞµĞ¿Ñ€Ğ°Ğ²Ğ¸Ğ»ÑŒĞ½Ñ‹Ğ¹ Ğ½Ğ¾Ğ¼ĞµÑ€ ĞºĞ¾Ğ½Ñ‚Ñ€Ğ°ĞºÑ‚Ğ°.");
 		}
 	}
 
 	public String toString() {
-		return "Ô.È.Î.: " + fio + "\nÍîìåğ êîíòğàêòà: " + numberContract + "\nÄîìàøíèé àäğåñ: " + homeAddress
-				+ "\nÒèï êîíòğàêòà: " + contract + "\nÑóììà âêëàäà: " + depositAmount + "\nÏğîäîëæèòåëüíîñòü: "
+		return "Ğ¤.Ğ˜.Ğ.: " + fio + "\nĞĞ¾Ğ¼ĞµÑ€ ĞºĞ¾Ğ½Ñ‚Ñ€Ğ°ĞºÑ‚Ğ°: " + numberContract + "\nĞ”Ğ¾Ğ¼Ğ°ÑˆĞ½Ğ¸Ğ¹ Ğ°Ğ´Ñ€ĞµÑ: " + homeAddress
+				+ "\nĞ¢Ğ¸Ğ¿ ĞºĞ¾Ğ½Ñ‚Ñ€Ğ°ĞºÑ‚Ğ°: " + contract + "\nĞ¡ÑƒĞ¼Ğ¼Ğ° Ğ²ĞºĞ»Ğ°Ğ´Ğ°: " + depositAmount + "\nĞŸÑ€Ğ¾Ğ´Ğ¾Ğ»Ğ¶Ğ¸Ñ‚ĞµĞ»ÑŒĞ½Ğ¾ÑÑ‚ÑŒ: "
 				+ duration;
 	}
 
